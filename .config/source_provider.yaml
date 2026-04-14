@@ -20,10 +20,17 @@ ani_source_provider:
   classification_on_directory: true
   custom_season_mapping:
   # [str] keyword: [int] Season
+  # Or ->
+  # [str] keyword:
+  #   season: [int] Season
+  #   reserve_keywords: [str] Replacement text in filename
   # Example ->
   # 神覺者候補選拔試驗篇: 2
   # Season2: 2
   # 'Season 2': 2
+  # 千年血戰篇-訣別譚-:
+  #   season: 2
+  #   reserve_keywords: 千年血戰篇
   season_episode_adjustment:
   # Title:
   #   [int] Season: [int] Offset
